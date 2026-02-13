@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Management — Sai Vaishnavi Manchukonda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="site-header">
+      <h1>Sai Vaishnavi Manchukonda</h1>
+      <p class="subtitle">Mini Student Management System</p>
+    </header>
+
+    <section class="card form-card">
+      <h2>Add Student</h2>
+      <form id="studentForm">
+        <div class="row">
+          <div class="field">
+            <label for="roll">Roll No</label>
+            <input id="roll" name="roll" type="text" placeholder="e.g. 101" required>
+            <span class="error" id="rollError"></span>
+          </div>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Student full name" required>
+            <span class="error" id="nameError"></span>
+          </div>
+        </div>
+
+        <h3>Marks (0 - 100)</h3>
+        <div class="marks-grid">
+          <div class="field">
+            <label for="math">Math</label>
+            <input id="math" name="math" type="number" min="0" max="100" required>
+          </div>
+          <div class="field">
+            <label for="physics">Physics</label>
+            <input id="physics" name="physics" type="number" min="0" max="100" required>
+          </div>
+          <div class="field">
+            <label for="chemistry">Chemistry</label>
+            <input id="chemistry" name="chemistry" type="number" min="0" max="100" required>
+          </div>
+          <div class="field">
+            <label for="english">English</label>
+            <input id="english" name="english" type="number" min="0" max="100" required>
+          </div>
+          <div class="field">
+            <label for="computer">Computer</label>
+            <input id="computer" name="computer" type="number" min="0" max="100" required>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn primary">Add Student</button>
+          <button type="button" id="clearForm" class="btn muted">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card list-card">
+      <div class="list-header">
+        <h2>Student Records</h2>
+        <div class="list-actions">
+          <button id="clearAll" class="btn danger">Clear All</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table id="studentsTable">
+          <thead>
+            <tr>
+              <th>Roll</th>
+              <th>Name</th>
+              <th>Math</th>
+              <th>Physics</th>
+              <th>Chemistry</th>
+              <th>English</th>
+              <th>Computer</th>
+              <th>Total</th>
+              <th>%</th>
+              <th>Grade</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- rows inserted here -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="stats">
+        <p>Total Students: <strong id="totalStudents">0</strong></p>
+        <p>Class Average: <strong id="classAvg">0</strong></p>
+      </div>
+    </section>
+
+    <footer class="footer">© 2026 Sai Vaishnavi Manchukonda</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
