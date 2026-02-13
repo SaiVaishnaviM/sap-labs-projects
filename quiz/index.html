@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Quiz — Sai Vaishnavi Manchukonda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="site-header">
+      <h1>Sai Vaishnavi Manchukonda</h1>
+      <p class="subtitle">Interactive Quiz Website</p>
+    </header>
+
+    <!-- Quiz Screen -->
+    <section id="quizScreen" class="screen active">
+      <div class="card">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <p class="question-count" id="questionCount">1 / 10</p>
+
+        <div class="question-card">
+          <h2 id="questionText">Question here?</h2>
+          <div class="options" id="optionsContainer">
+            <!-- Options dynamically inserted here -->
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="nextBtn" class="btn primary" disabled>Next Question</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Screen -->
+    <section id="resultsScreen" class="screen">
+      <div class="card result-card">
+        <h2>Quiz Completed! 🎉</h2>
+        
+        <div class="score-display">
+          <div class="score-box">
+            <p class="score-label">Your Score</p>
+            <p class="score-value" id="scoreDisplay">0 / 10</p>
+          </div>
+          <div class="score-box">
+            <p class="score-label">Percentage</p>
+            <p class="score-value" id="percentageDisplay">0%</p>
+          </div>
+          <div class="score-box">
+            <p class="score-label">Grade</p>
+            <p class="score-value grade" id="gradeDisplay">F</p>
+          </div>
+        </div>
+
+        <div class="feedback" id="feedbackBox"></div>
+
+        <button id="restartBtn" class="btn primary">Restart Quiz</button>
+      </div>
+    </section>
+
+    <footer class="footer">© 2026 Sai Vaishnavi Manchukonda</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
