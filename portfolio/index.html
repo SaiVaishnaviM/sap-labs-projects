@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Vaishnavi Manchukonda - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+    </button>
+    
+    <header>
+        <div class="header-content">
+            <h1>Sai Vaishnavi Manchukonda</h1>
+            <p class="tagline">Full Stack Web Developer & Creative Coder</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hi! I'm Sai Vaishnavi Manchukonda, a passionate full stack web developer with a love for creating beautiful and functional web applications. With expertise in modern web technologies, I specialize in building responsive, user-friendly interfaces and robust backend systems.</p>
+                <p>I believe in writing clean, maintainable code and staying updated with the latest industry trends. My journey in web development has been driven by curiosity and a desire to solve real-world problems through technology. I'm constantly learning new frameworks and tools to expand my skillset and deliver better solutions.</p>
+                <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community. Let's collaborate and build something amazing together!</p>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-Commerce Platform</h3>
+                    <p class="tech-stack">React | Node.js | MongoDB</p>
+                    <p>A full-featured e-commerce application with product catalog, shopping cart, payment integration, and admin dashboard. Implemented user authentication and real-time inventory management.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Task Management App</h3>
+                    <p class="tech-stack">JavaScript | CSS3 | LocalStorage</p>
+                    <p>An intuitive task management application with drag-and-drop functionality, priority levels, and due date tracking. Features real-time updates and persistent data storage.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Weather Dashboard</h3>
+                    <p class="tech-stack">React | API Integration | Charts.js</p>
+                    <p>Real-time weather application featuring current conditions, forecasts, and interactive weather maps. Integrated with OpenWeather API for accurate weather data across multiple locations.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Social Media Feed</h3>
+                    <p class="tech-stack">React | Firebase | Tailwind CSS</p>
+                    <p>A social platform with user profiles, post creation, likes, comments, and real-time notifications. Includes image upload functionality and social connection features.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Personal Blog Platform</h3>
+                    <p class="tech-stack">Next.js | PostgreSQL | GraphQL</p>
+                    <p>A modern blogging platform with rich text editor, markdown support, comment system, and SEO optimization. Features tag-based categorization and reading time estimates.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Fitness Tracker App</h3>
+                    <p class="tech-stack">Vue.js | Express | MySQL</p>
+                    <p>Comprehensive fitness tracking application with workout logging, progress charts, nutrition tracking, and goal management. Includes data visualization and personalized recommendations.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name">
+                    <span id="nameError" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                    <span id="emailError" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message (10-500 characters)"></textarea>
+                    <span id="messageError" class="error-message"></span>
+                </div>
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Sai Vaishnavi Manchukonda. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
